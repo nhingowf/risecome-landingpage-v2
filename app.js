@@ -95,19 +95,27 @@
     var params = new URLSearchParams(location.search);
     var initial = params.get('nganh');
     if (initial && INDUSTRIES.some(function (i) { return i.id === initial; })) select.value = initial;
+    /* data-picker="compact": bảng mốc intent gập lại, mở sẵn khi khách đến từ link ?nganh= hoặc #h-roas */
+    var compact = root.getAttribute('data-picker') === 'compact';
+    var openMore = !!initial || location.hash === '#h-roas';
     function render() {
       var ind = INDUSTRIES.filter(function (i) { return i.id === select.value; })[0] || INDUSTRIES[0];
       var c = (ind.zone[0] + ind.zone[1]) / 2;
       var rows = INTENTS.map(function (t) {
         return '<tr><td class="k">' + t.name + '</td><td class="r">' + fmt0(c * t.lo) + '–' + fmt0(c * t.hi) + '×</td><td>' + t.note + '</td></tr>';
       }).join('') + '<tr><td class="k">Loại trừ</td><td class="r">Không chạy</td><td>Nhu cầu, vấn đề chung: loại khỏi campaign</td></tr>';
+      var prev = $('details', out);
+      if (prev) openMore = prev.open;
+      var table = '<table class="tbl tbl-stack"><thead><tr><th>Nhóm intent</th><th class="r">Mốc Target ROAS</th><th>Rise Ads làm gì</th></tr></thead><tbody>' + rows + '</tbody></table>';
+      if (compact) {
+        table = '<details class="more"' + (openMore ? ' open' : '') + '><summary>Xem mốc theo nhóm từ khoá: Brand, High, Mid, Competitor</summary>' + table + '</details>';
+      }
       out.innerHTML =
         '<div class="p-zone">' +
           '<div><b>' + ind.zone[0] + '–' + ind.zone[1] + '×</b><span>Vùng Target ROAS tham chiếu cho ' + ind.name + '</span></div>' +
           '<div><b>' + ind.group + '</b><span>Nhóm ngành. ' + GROUP_NOTE[ind.group] + '</span></div>' +
           '<div><b>' + fmt0(ind.zone[1] * 1.3) + '×</b><span>Trên mức này thường đã bị siết hiển thị, GMV đứng dù ROAS đẹp</span></div>' +
-        '</div>' +
-        '<table class="tbl tbl-stack"><thead><tr><th>Nhóm intent</th><th class="r">Mốc Target ROAS</th><th>Rise Ads làm gì</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+        '</div>' + table +
         '<p class="note mt-s">Vùng rút từ danh mục Rise Ads đang vận hành, đã gộp và ẩn danh. Đây là điểm xuất phát; mốc thật cho shop bạn chốt sau audit tuần 1.</p>';
       out.setAttribute('aria-live', 'polite');
     }
