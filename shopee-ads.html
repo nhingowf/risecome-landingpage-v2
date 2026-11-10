@@ -1,0 +1,484 @@
+<!doctype html>
+<!-- TỰ SINH từ src/shopee-ads.html bằng tools/build_site.py. Đừng sửa file này: sửa chữ cố định trong src/, sửa thông tin chung ở risecom.vn/admin (Thông tin website). -->
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopee Ads Management – Quy trình 6 bước, 4 trụ cột, nhịp vận hành</title>
+<meta name="description" content="Keyword theo ý định mua, phân tầng SKU Pareto, vùng ROAS theo ngành hàng và intent, ma trận CPC × CVR, vận hành theo khung giờ 24/7. Case +814% GMV trong 4 tuần.">
+<meta name="theme-color" content="#1b2e50">
+<meta property="og:title" content="Shopee Ads Management – Rise Ads Agency">
+<meta property="og:image" content="og/shopee-ads.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261104j">
+</head>
+<body>
+
+<div class="topbar field-navy">
+  <header class="nav wrap">
+    <a class="mark" href="index.html" aria-label="RiseAds, trang chủ">Rise<b>Ads</b></a>
+    <nav class="nav-links" aria-label="Chính">
+      <a href="services.html">Dịch vụ</a>
+      <a href="shopee-ads.html" aria-current="page">Shopee Ads</a>
+      <a href="workshop.html">Workshop</a>
+      <a href="blog.html">Blog</a>
+      <a href="company.html">Công ty</a>
+      <a href="clients.html">Đối tác</a>
+    </nav>
+    <div class="nav-act">
+      <button class="btn" type="button" data-modal="tu-van">Liên hệ tư vấn</button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sheet">Menu</button>
+    </div>
+  </header>
+</div>
+<div class="field-navy">
+
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap grid">
+      <div class="hero-text">
+        <p class="crumb"><a href="index.html">Trang chủ</a> / <a href="services.html">Dịch vụ</a> / Shopee Ads Management</p>
+        <h1 id="h1">Shopee Ads Management</h1>
+        <p class="lead">Tối ưu bằng 43 nhánh chẩn đoán, dữ liệu 560+ gian hàng và một người phụ trách (PIC) riêng cho shop bạn. Chiến lược may đo cho từng gian hàng. Đang nhận khách.</p>
+        <div class="actions"><button class="btn" type="button" data-modal="tu-van">Liên hệ tư vấn</button><a class="link" href="#quy-trinh">Xem quy trình</a></div>
+        <p class="facts"><span><b>V4</b>quy trình</span><span><b>43</b>nhánh chẩn đoán</span><span><b>24/7</b>cảnh báo</span></p>
+      </div>
+      <div class="hero-media">
+        <div data-ui aria-label="Báo cáo ngày của một shop, số liệu minh hoạ">
+          <div class="ui-head"><b>Báo cáo ngày · Shop Thời trang (ẩn danh)</b><span>Vùng ngành 10–14× · hôm qua</span></div>
+          <div class="ui-kpis">
+            <div><b>13,1×</b><span>ROAS · trong vùng</span></div>
+            <div><b>+6,4%</b><span>GMV so với hôm trước</span></div>
+            <div><b>98%</b><span>tiến độ chi tiêu</span></div>
+            <div><b>2</b><span>cờ bất thường</span></div>
+          </div>
+          <table style="margin-top:16px">
+            <thead><tr><th>Nhóm intent</th><th>Target</th><th>Thực tế</th><th>Trạng thái</th></tr></thead>
+            <tbody>
+              <tr><td>Brand</td><td>26×</td><td>31,2×</td><td><span class="tag-ok">Giữ</span></td></tr>
+              <tr><td>High Intent</td><td>14×</td><td>13,6×</td><td><span class="tag-ok">Trong vùng</span></td></tr>
+              <tr><td>Mid Intent</td><td>11×</td><td>8,9×</td><td><span class="tag-warn">Biên, theo dõi CVR</span></td></tr>
+              <tr><td>Competitor</td><td>8×</td><td>5,1×</td><td><span class="tag-risk">Cắt bid 20%</span></td></tr>
+            </tbody>
+          </table>
+          <p class="ui-foot">Số liệu minh hoạ giao diện. Dữ liệu thật được chia sẻ trong buổi tư vấn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap hub" style="padding-block:var(--sec)">
+  <aside class="toc" aria-label="Mục lục trang">
+    <ol>
+      <li><a href="#bai-toan">Bài toán</a></li>
+      <li><a href="#hoat-dong">8 hoạt động</a></li>
+      <li><a href="#quy-trinh">Quy trình 6 bước</a></li>
+      <li><a href="#tru-cot">4 trụ cột</a></li>
+      <li><a href="#nhip">Nhịp vận hành</a></li>
+      <li><a href="#huong-2026">Hướng 2026</a></li>
+      <li><a href="#ket-qua">Kết quả</a></li>
+    </ol>
+  </aside>
+
+  <div class="hub-body">
+
+    <!-- Bài toán -->
+    <section id="bai-toan" aria-labelledby="h-bt">
+      <h2 id="h-bt" class="reveal">Ba tình huống quen thuộc</h2>
+      <ol class="rows">
+      <li class="reveal"><h3>ROAS không ổn định, GMV khó dự đoán</h3><p class="r-body--wide">Tháng này 12×, tháng sau 4×. Rise Ads theo dõi ROAS theo khung giờ, chẩn đoán và xử lý trước khi tụt sâu.</p></li>
+      <li class="reveal"><h3>Keyword sai tệp, nhiều click nhưng không ra đơn</h3><p class="r-body--wide">Phân 4 nhóm intent, loại từ kém định kỳ, tiết kiệm 30–40% ngân sách.</p></li>
+      <li class="reveal"><h3>Không biết lúc nào scale, lúc nào siết</h3><p class="r-body--wide">Ma trận CPC × CVR chỉ ra thời điểm và cách scale đúng hướng.</p></li>
+    </ol>
+      <div class="actions mt reveal"><button class="btn" type="button" data-modal="tu-van">Tôi đang gặp bài toán này</button></div>
+    </section>
+
+    <!-- 8 hoạt động -->
+    <section id="hoat-dong" aria-labelledby="h-hd">
+      <h2 id="h-hd" class="reveal">8 nhóm hoạt động hằng ngày</h2>
+      <ol class="steps">
+        <li class="reveal"><h3>Nghiên cứu và phân loại keyword theo intent</h3><p>Brand, High Intent, Mid Intent, Competitor. Loại nhóm “nhu cầu, vấn đề chung”. Cắt 30–40% lãng phí.</p></li>
+        <li class="reveal"><h3>Phân tích danh mục theo Pareto GMV</h3><p>100% SKU theo GMV tích luỹ: Key Hero 0–60%, Potential 60–90%, Long-tail 90–100%, Traffic. Phân bổ theo tầng thực.</p></li>
+        <li class="reveal"><h3>Thiết lập campaign theo intent và tầng</h3><p>Mỗi nhóm intent và tầng sản phẩm có campaign, KPI, ngân sách riêng. Shop Ads và GMV Max phối hợp theo giai đoạn.</p></li>
+        <li class="reveal"><h3>Vận hành hằng ngày theo khung giờ</h3><p>Theo dõi ROAS, CPC, CVR, chi tiêu theo khung: đêm kiểm soát, sáng tối đa, chiều ổn định, tối giờ vàng. Branch A/B/C.</p></li>
+        <li class="reveal"><h3>Chẩn đoán CPC × CVR qua 43 nhánh</h3><p>Decision Tree chẩn đoán mỗi ngày. Mỗi SKU một nhánh, một hành động. Không “cài rồi quên”.</p></li>
+        <li class="reveal"><h3>Quản trị ROAS theo 13 mốc mục tiêu</h3><p>13 mốc Target ROAS đặt trên lưới ngành × intent. Vượt xa trần vùng ngành: hạ Target từng bước để mở phủ. Dưới sàn vùng trên 20%: chuyển Branch A. Không scale SKU có CR chưa đạt.</p></li>
+        <li class="reveal"><h3>Tối ưu listing đồng bộ Ads</h3><p>Traffic tốt mà listing kém là lãng phí. Audit tiêu đề, ảnh, video, voucher. Ngành cần độ tin cao: chuẩn hoá hiển thị.</p></li>
+        <li class="reveal"><h3>Báo cáo 3 tầng và tư vấn chiến lược</h3><p>Ngày: ROAS so mục tiêu, chi tiêu, GMV, cờ bất thường. Tuần: xu hướng 7 ngày, chẩn đoán toàn danh mục. Tháng: chiến lược, review danh mục, tư vấn giá và lịch Mega Sale. Một đầu mối: PIC.</p></li>
+      </ol>
+    </section>
+
+    <!-- Quy trình 6 bước -->
+    <section id="quy-trinh" aria-labelledby="h-qt">
+      <h2 id="h-qt" class="reveal">Một quy trình chuẩn. Cho mọi brand.</h2>
+      <p class="lead reveal">Chúng tôi không ép template vào brand của bạn. Chúng tôi chạy dữ liệu của bạn qua một quy trình đã chứng minh, và chiến lược rơi ra từ đó. Bước 1–5 hoàn thành trong 7 ngày đầu. Bước 6 trình bày và thống nhất trước khi tiêu đồng ngân sách đầu tiên.</p>
+      <div class="readfast mt reveal"><b>Đọc nhanh</b>7 ngày đầu bạn nhận 5 tài liệu vận hành. Mỗi SKU được gắn một nhánh chẩn đoán. Cam kết KPI công khai trước khi chạy.</div>
+
+      <ol class="tl reveal" aria-label="Bản đồ 6 bước">
+        <li><span class="tl-k">Phân tích thị trường</span><p>Bản đồ lượng tìm kiếm và phân bố intent của ngành.</p></li>
+        <li><span class="tl-k">Audit toàn bộ shop</span><p>Nền ROAS, CPC, CVR và chẩn đoán điểm nghẽn.</p></li>
+        <li><span class="tl-k">Chẩn đoán CPC × CVR</span><p>Mỗi SKU gắn một Branch và hành động.</p></li>
+        <li><span class="tl-k">Keyword theo intent</span><p>Bản đồ ngân sách 3 tầng: Đúng tệp, Mở rộng, Sai tệp.</p></li>
+        <li><span class="tl-k">Phân tầng sản phẩm</span><p>Ma trận 4 tầng Traffic, Key, Potential, Long-tail.</p></li>
+        <li><span class="tl-k">Lộ trình và cam kết</span><p>Lộ trình 3 bước và dải KPI cam kết công khai.</p></li>
+      </ol>
+
+      <div class="stack mt">
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Phân tích thị trường và ý định tìm kiếm</h3></div>
+          <div class="c-body">
+            <p>Trước khi chạm vào một campaign, trả lời 3 câu hỏi về ngành:</p>
+            <ul class="mt-s">
+              <li>Ngành có bao nhiêu nhu cầu tìm kiếm (tổng lượt tìm kiếm 30 ngày)?</li>
+              <li>Ý định mua phân bố thế nào? Có ngành hơn 90% người tìm đã chốt brand, có ngành chủ yếu đang so sánh. Hai kiểu ngành cần hai chiến lược ngược nhau.</li>
+              <li>Brand đang đứng đâu trên bản đồ tìm kiếm so với đối thủ? Từ đó chọn thế phòng thủ hay tấn công.</li>
+            </ul>
+            <!-- Ví dụ Mẹ & Bé (2,5 triệu lượt, 94%, 2%) chờ Q14 mới công khai -->
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Audit toàn bộ shop: 5 tài liệu trong 7 ngày</h3></div>
+          <div class="c-body">
+            <ol>
+              <li>Audit dữ liệu toàn shop: nền ROAS, CPC, CVR từng campaign so với benchmark ngành.</li>
+              <li>Bản đồ keyword intent: phân 3 tầng, chỉ rõ phần trăm ngân sách đang chảy vào “sai tệp”.</li>
+              <li>Ma trận sản phẩm 4 tầng: Pareto toàn SKU và chiến lược từng nhóm.</li>
+              <li>Chẩn đoán điểm nghẽn: Branch A/B/C cho SKU chủ lực.</li>
+              <li>Kế hoạch hành động giai đoạn 1: lộ trình 4 tuần và ROAS Target khởi điểm theo vùng ngành.</li>
+            </ol>
+            <p class="mt-s">Đây là tài liệu vận hành, mỗi dòng đi kèm một hành động.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Máy chẩn đoán: CPC × CVR và Branch A/B/C</h3></div>
+          <div class="c-body">
+            <p>ROAS là hàm của CPC × CVR. CPC là rủi ro chi phí (bid, cạnh tranh, chất lượng tệp). CVR là năng lực chuyển đổi (listing, giá, voucher, độ tin). Mỗi SKU mỗi ngày nhận một chẩn đoán gốc.</p>
+            <table class="tbl tbl-stack mt-s">
+              <thead><tr><th>Branch</th><th>Vấn đề</th><th>Dấu hiệu</th><th>Hướng xử lý</th></tr></thead>
+              <tbody>
+                <tr><td class="k" data-l="Branch"><span class="tag-risk">A</span> Traffic (phía CPC)</td><td data-l="Vấn đề">Tệp bị siết hoặc thua bid</td><td data-l="Dấu hiệu">CPC tăng, hiển thị giảm</td><td data-l="Hướng xử lý">Chỉnh ROAS Target hoặc bid, review keyword ăn ngân sách, mở lại đúng tệp</td></tr>
+                <tr><td class="k" data-l="Branch"><span class="tag-warn">B</span> Chuyển đổi (phía CVR)</td><td data-l="Vấn đề">Listing, giá, voucher, độ tin</td><td data-l="Dấu hiệu">Traffic ổn nhưng CVR dưới chuẩn</td><td data-l="Hướng xử lý">Ngưng scale ngay, audit listing và voucher, rồi mới mở lại ngân sách</td></tr>
+                <tr><td class="k" data-l="Branch"><span class="tag-ok">C</span> Cấu trúc, hiển thị</td><td data-l="Vấn đề">Campaign chồng chéo, SKU sai tầng</td><td data-l="Dấu hiệu">Tự cạnh tranh, phân phối lệch</td><td data-l="Hướng xử lý">Tái cấu trúc, phân lại tầng, tách hoặc gộp đúng vai trò</td></tr>
+              </tbody>
+            </table>
+            <p class="mt-s">3 nhánh gốc mở rộng thành 43 nhánh chẩn đoán. Mỗi nhánh là một kịch bản và một hành động đã mã hoá sẵn. Không có chỗ cho cảm tính.</p>
+            <!-- Cột "Hướng xử lý" công khai hay không: chờ Q4 -->
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Keyword intent: nơi 30–40% ngân sách đi chết</h3></div>
+          <div class="c-body">
+            <p>Không phải lượt tìm kiếm nào cũng xứng đáng với ngân sách của bạn.</p>
+            <table class="tbl tbl-stack mt-s">
+              <thead><tr><th>Tầng</th><th>Loại keyword</th><th>Đặc điểm</th><th>Quyết định ngân sách</th></tr></thead>
+              <tbody>
+                <tr><td class="k" data-l="Tầng">Đúng tệp</td><td data-l="Loại keyword">Brand, SKU cụ thể</td><td data-l="Đặc điểm">Người dùng biết muốn mua gì</td><td data-l="Ngân sách"><span class="tag-ok">Tối đa</span></td></tr>
+                <tr><td class="k" data-l="Tầng">Mở rộng</td><td data-l="Loại keyword">Danh mục, so sánh</td><td data-l="Đặc điểm">Có nhu cầu, chưa chốt brand</td><td data-l="Ngân sách"><span class="tag-warn">Mở rộng, nơi lấy thị phần</span></td></tr>
+                <tr><td class="k" data-l="Tầng">Sai tệp</td><td data-l="Loại keyword">Lướt xem, không ý định</td><td data-l="Đặc điểm">Thoát cao</td><td data-l="Ngân sách"><span class="tag-risk">Loại trừ</span></td></tr>
+              </tbody>
+            </table>
+            <p class="mt-s">Tuần đầu, toàn bộ keyword được phân 3 tầng kèm phần trăm chi tiêu đang nằm ở tầng sai tệp.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Phân tầng sản phẩm: bản đồ Pareto</h3></div>
+          <div class="c-body">
+            <table class="tbl tbl-stack">
+              <thead><tr><th>Tầng</th><th>% GMV tích luỹ</th><th>Chiến lược</th></tr></thead>
+              <tbody>
+                <tr><td class="k" data-l="Tầng">Key Hero</td><td data-l="% GMV">0–60%</td><td data-l="Chiến lược">Khoảng 5–10% SKU gánh 60% GMV. Bảo vệ và scale, không để traffic rớt.</td></tr>
+                <tr><td class="k" data-l="Tầng">Potential</td><td data-l="% GMV">60–90%</td><td data-l="Chiến lược">Quảng cáo mạnh, đôn lên Key.</td></tr>
+                <tr><td class="k" data-l="Tầng">Long-tail</td><td data-l="% GMV">90–100%</td><td data-l="Chiến lược">Tối ưu chi phí, lọc theo CVR, ATC, CTR, xoay ứng viên lên tầng cao.</td></tr>
+                <tr><td class="k" data-l="Tầng">Traffic</td><td data-l="% GMV">—</td><td data-l="Chiến lược">Giá cạnh tranh, phủ rộng, kéo khách mới. Hoàn thiện ma trận 4 tầng.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>ROAS Target là ngưỡng lọc tệp, không phải cần gạt bid</h3></div>
+          <div class="c-body">
+            <p>Ngược với trực giác: trong cơ chế phân phối của Shopee, ROAS Target là ngưỡng lọc tệp, không phải “mục tiêu lợi nhuận”.</p>
+            <table class="tbl tbl-stack mt-s">
+              <thead><tr><th>Target</th><th>Điều gì xảy ra</th><th>Kết quả</th></tr></thead>
+              <tbody>
+                <tr><td class="k" data-l="Target">Quá cao</td><td data-l="Điều gì xảy ra">Lọc tệp quá gắt</td><td data-l="Kết quả">Hiển thị bị siết, mất volume. Tưởng an toàn nhưng tự bóp tăng trưởng.</td></tr>
+                <tr><td class="k" data-l="Target">Trong vùng ngành</td><td data-l="Điều gì xảy ra">Cân bằng chất lượng tệp và độ phủ</td><td data-l="Kết quả">Vùng scale hiệu quả nhất.</td></tr>
+                <tr><td class="k" data-l="Target">Quá thấp</td><td data-l="Điều gì xảy ra">Phân phối rộng, tệp loãng</td><td data-l="Kết quả">Vùng lãng phí.</td></tr>
+              </tbody>
+            </table>
+            <p class="mt-s">Hệ thống phân tầng theo 13 mốc ROAS Target, đối chiếu chi phí, GMV, CVR, CPC để tìm vùng tối ưu. Vùng tối ưu mỗi ngành, mỗi shop khác nhau. Đo từ dữ liệu thật giai đoạn 1, đo lại liên tục khi thị trường đổi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 trụ cột -->
+    <section id="tru-cot" aria-labelledby="h-tc">
+      <h2 id="h-tc" class="reveal">4 trụ cột vận hành Shopee Ads</h2>
+      <p class="lead reveal">Đồng bộ với bước 3–6 của quy trình chuẩn.</p>
+      <div class="stack mt">
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Keyword Intent</h3></div>
+          <div class="c-body"><table class="tbl tbl-stack"><thead><tr><th>Nhóm</th><th>Người dùng</th><th>Chiến lược</th></tr></thead><tbody>
+            <tr><td class="k" data-l="Nhóm">Brand</td><td data-l="Người dùng">Đã biết brand, chỉ cần đúng shop</td><td data-l="Chiến lược">Ngân sách tối đa, bảo vệ SoV 80–90%</td></tr>
+            <tr><td class="k" data-l="Nhóm">High Intent</td><td data-l="Người dùng">Đã quyết mua, đang so sánh</td><td data-l="Chiến lược">ROAS Target cao, ưu tiên</td></tr>
+            <tr><td class="k" data-l="Nhóm">Mid Intent</td><td data-l="Người dùng">Đang tìm hiểu danh mục</td><td data-l="Chiến lược">Mở rộng, xây nhận biết</td></tr>
+            <tr><td class="k" data-l="Nhóm">Competitor</td><td data-l="Người dùng">Tìm brand đối thủ</td><td data-l="Chiến lược">Góc sáng tạo, kiểm soát bid</td></tr>
+            <tr><td class="k" data-l="Nhóm">Loại trừ</td><td data-l="Người dùng">Nhu cầu, vấn đề chung</td><td data-l="Chiến lược">Loại khỏi campaign</td></tr>
+          </tbody></table></div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Phân tầng SKU Pareto</h3></div>
+          <div class="c-body"><table class="tbl tbl-stack"><thead><tr><th>Tầng</th><th>% GMV</th><th>Ngân sách</th></tr></thead><tbody>
+            <tr><td class="k" data-l="Tầng">Key Hero</td><td data-l="% GMV">0–60%</td><td data-l="Ngân sách">60–70%, bảo vệ và mở rộng</td></tr>
+            <tr><td class="k" data-l="Tầng">Potential</td><td data-l="% GMV">60–90%</td><td data-l="Ngân sách">15–20%, scale khi CPC × CVR tốt</td></tr>
+            <tr><td class="k" data-l="Tầng">Long-tail</td><td data-l="% GMV">90–100%</td><td data-l="Ngân sách">10%, thu hoạch ROAS</td></tr>
+            <tr><td class="k" data-l="Tầng">Traffic</td><td data-l="% GMV">—</td><td data-l="Ngân sách">5%, giá cạnh tranh, phủ rộng</td></tr>
+          </tbody></table></div>
+        </div>
+        <div class="grid reveal" id="vung-roas">
+          <div class="c-lead"><h3>Vùng ROAS theo ngành và intent</h3><p class="mt-s">Không có một vùng ROAS cho mọi shop. Rise Ads đặt 13 mốc Target ROAS trên lưới ngành × intent, lấy từ danh mục đang vận hành.</p></div>
+          <div class="c-body stack">
+            <table class="tbl tbl-stack"><thead><tr><th>Nhóm</th><th>Ngành</th><th class="r">Vùng ROAS tham chiếu</th></tr></thead><tbody>
+              <tr><td class="k" data-l="Nhóm">Nền</td><td data-l="Ngành">Mẹ &amp; Bé · Thực phẩm &amp; Đồ uống</td><td class="r" data-l="Vùng">9–12×</td></tr>
+              <tr><td class="k" data-l="Nhóm">Trung</td><td data-l="Ngành">Thể thao · Thời trang · Làm đẹp · Gia dụng · Điện tử · Sách · Vật tư điện lạnh · Học tập</td><td class="r" data-l="Vùng">10–15×</td></tr>
+              <tr><td class="k" data-l="Nhóm">Cao</td><td data-l="Ngành">Nội thất · Thiết bị điện / Văn phòng · Giày dép · Chăn ga gối</td><td class="r" data-l="Vùng">17–40×</td></tr>
+            </tbody></table>
+            <p class="small">Vùng rút từ danh mục Rise Ads đang vận hành trong 17 ngành hàng, đã gộp theo ngành và ẩn danh. Số thật của từng ngành chỉ chia sẻ trong buổi tư vấn.</p>
+            <div>
+              <p><b>Mốc theo intent trong một ngành.</b> Ví dụ Thời trang, tâm vùng 12×: Brand 18–36× · High Intent 12–15× · Mid Intent 8–12× · Competitor 6–10× · Loại trừ: không chạy. <a href="index.html?nganh=thoi-trang#h-roas">Thử với ngành của bạn</a>.</p>
+            </div>
+            <table class="tbl tbl-stack"><thead><tr><th>Vị trí so với vùng ngành</th><th>Trạng thái</th><th>Hành động</th></tr></thead><tbody>
+              <tr><td class="k" data-l="Vị trí">Vượt xa trần vùng</td><td data-l="Trạng thái"><span class="tag-warn">Bị siết hiển thị</span></td><td data-l="Hành động">Hạ Target ROAS từng bước để mở phủ</td></tr>
+              <tr><td class="k" data-l="Vị trí">Trong vùng</td><td data-l="Trạng thái"><span class="tag-ok">Mục tiêu</span></td><td data-l="Hành động">Duy trì, scale theo tầng SKU</td></tr>
+              <tr><td class="k" data-l="Vị trí">Dưới sàn 10–20%</td><td data-l="Trạng thái"><span class="tag-warn">Biên</span></td><td data-l="Hành động">Theo dõi CVR theo ngày</td></tr>
+              <tr><td class="k" data-l="Vị trí">Dưới sàn trên 20%</td><td data-l="Trạng thái"><span class="tag-risk">Traffic kém</span></td><td data-l="Hành động">Branch A, audit ngay</td></tr>
+            </tbody></table>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Ma trận CPC × CVR</h3></div>
+          <div class="c-body"><table class="tbl tbl-stack"><thead><tr><th>Tổ hợp</th><th>Chẩn đoán</th><th>Hành động</th></tr></thead><tbody>
+            <tr><td class="k" data-l="Tổ hợp">CPC tăng · CVR tăng</td><td data-l="Chẩn đoán"><span class="tag-ok">Tốt</span></td><td data-l="Hành động">Scale, mở keyword liên quan</td></tr>
+            <tr><td class="k" data-l="Tổ hợp">CPC tăng · CVR giảm</td><td data-l="Chẩn đoán"><span class="tag-risk">Sai tệp</span></td><td data-l="Hành động">Branch A: dừng, audit, dựng lại</td></tr>
+            <tr><td class="k" data-l="Tổ hợp">CPC giảm · CVR tăng</td><td data-l="Chẩn đoán"><span class="tag-warn">Cơ hội bị bỏ lỡ</span></td><td data-l="Hành động">Tăng ngân sách</td></tr>
+            <tr><td class="k" data-l="Tổ hợp">CPC giảm · CVR giảm</td><td data-l="Chẩn đoán"><span class="tag-risk">Traffic kém</span></td><td data-l="Hành động">Branch A: cắt, dựng lại với khớp chính xác hoặc cụm từ</td></tr>
+          </tbody></table></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nhịp vận hành -->
+    <section id="nhip" aria-labelledby="h-nh">
+      <h2 id="h-nh" class="reveal">Vận hành là nhịp điệu</h2>
+      <p class="lead reveal">Ai cũng trình bày được chiến lược. Đây là chính xác cách chúng tôi vận hành nó, ngày qua ngày, tháng qua tháng, cho mọi khách hàng.</p>
+      <div class="readfast mt reveal"><b>Đọc nhanh</b>Kiểm soát theo 4 khung giờ mỗi ngày. Review tháng 4 phần, đối chiếu công khai với cam kết. Rõ ai chịu trách nhiệm gì giữa Rise Ads và brand.</div>
+      <div class="stack">
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Hệ thống hằng ngày: kiểm soát theo khung giờ 24/7</h3></div>
+          <div class="c-body">
+            <table class="tbl tbl-stack"><thead><tr><th>Khung giờ</th><th>Mục tiêu</th><th>Việc làm</th></tr></thead><tbody>
+              <tr><td class="k" data-l="Khung giờ">Đêm khuya · 00–06</td><td data-l="Mục tiêu">Kiểm soát chi phí</td><td data-l="Việc làm">Siết giờ thấp điểm, giữ ngân sách cho giờ vàng</td></tr>
+              <tr><td class="k" data-l="Khung giờ">Sáng · 06–12</td><td data-l="Mục tiêu">Bắt đỉnh nhu cầu</td><td data-l="Việc làm">Traffic cao, ý định cao, tối đa GMV</td></tr>
+              <tr><td class="k" data-l="Khung giờ">Chiều · 12–18</td><td data-l="Mục tiêu">Ổn định và tinh chỉnh</td><td data-l="Việc làm">Giữ hiệu suất, tránh bị phạt hiển thị</td></tr>
+              <tr><td class="k" data-l="Khung giờ">Tối · 18–24</td><td data-l="Mục tiêu">Thu hoạch và chuẩn bị</td><td data-l="Việc làm">Giờ vàng, tối đa doanh thu, chuẩn bị đỉnh nửa đêm</td></tr>
+            </tbody></table>
+            <p class="mt-s">Theo dõi 3 tầng: quy tắc tối ưu 24/7 theo khung giờ, theo dõi 13 mốc ROAS, và bảng điều khiển thời gian thực cho tiến độ chi tiêu, thực tế so mục tiêu, quyết ngân sách một thao tác.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Review tháng: 4 phần</h3></div>
+          <div class="c-body">
+            <ol class="tl" style="grid-auto-flow:row;grid-template-columns:1fr 1fr">
+              <li><span class="tl-k">Bóc tách hiệu quả</span><p>Theo 3 lớp: Brand, Kênh / Định dạng, SKU.</p></li>
+              <li><span class="tl-k">Kế hoạch so thực tế</span><p>Đối chiếu công khai với cam kết tại buổi đề xuất: dải GMV, dải ROAS, phân bổ kênh.</p></li>
+              <li><span class="tl-k">Phần còn lại của năm</span><p>Ngân sách theo tháng (2 kịch bản), mục tiêu giai đoạn kế, chuẩn bị mùa sale.</p></li>
+              <li><span class="tl-k">Hạng mục phối hợp</span><p>Việc cần brand phối hợp, rõ người chịu trách nhiệm, tác động và ví dụ SKU thật.</p></li>
+            </ol>
+            <blockquote class="statement mt">Mọi con số bất thường được giải thích bằng cơ chế, không giấu. Số đẹp mà ảo cũng nói thẳng.</blockquote>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Tính toàn vẹn của số liệu: giải thích, không tô vẽ</h3></div>
+          <div class="c-body"><table class="tbl tbl-stack"><thead><tr><th>Câu hỏi khách hay gặp</th><th>Cách Rise Ads trả lời</th></tr></thead><tbody>
+            <tr><td class="k" data-l="Câu hỏi">“Đóng góp của Ads cao bất thường, Ads đang ăn vào organic?”</td><td data-l="Trả lời">GMV Max ghi nhận đơn qua cả organic. Phép thử: nếu tổng doanh thu shop và ROAS cùng tăng khi chi tiêu tăng thì đó là tăng trưởng thật. KPI đúng: tỷ lệ chi Ads trên doanh thu, ROAS, tăng trưởng toàn shop.</td></tr>
+            <tr><td class="k" data-l="Câu hỏi">“CVR giảm mạnh?”</td><td data-l="Trả lời">CVR kỳ trước bị thổi phồng do cách ghi nhận. Khi CPC giảm nhanh hơn CVR, chi phí mỗi đơn vẫn rẻ, ROAS vẫn tăng. Bất thường nằm ở kỳ trước.</td></tr>
+            <tr><td class="k" data-l="Câu hỏi">“ROAS một định dạng từng rất cao nay tụt?”</td><td data-l="Trả lời">Số đẹp cũ đến từ quy mô nhỏ chạy phòng thủ keyword thương hiệu. Hành vi tìm kiếm đổi nên về mức thực. Bất thường là con số cũ.</td></tr>
+          </tbody></table></div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Lập ngân sách: 2 kịch bản, nền sạch</h3></div>
+          <div class="c-body">
+            <ol>
+              <li>Nhìn lại tính mùa vụ.</li>
+              <li>Làm sạch nền: loại các đợt tăng đột biến từ nền thấp.</li>
+              <li>Hai kịch bản: Cơ bản (tăng đều mỗi tháng, dễ duyệt) và Theo mùa (bám mùa sale).</li>
+              <li>Hàng rào: chỉ vượt kế hoạch khi ROAS giữ hoặc tăng, và tỷ lệ chi Ads trên doanh thu không vượt mức đã thống nhất với shop.</li>
+            </ol>
+            <p class="mt-s">Kết quả: doanh thu scale nhiều lần trong khi tỷ trọng chi phí Ads đứng yên hoặc giảm.</p>
+            <p class="mt-s"><b>Vòng trách nhiệm:</b> cam kết số công khai tại buổi đề xuất, vận hành 24/7 với chẩn đoán hằng ngày, đối chiếu từng cam kết tại review, tái phân bổ nghiêng về kênh đang thắng và báo cáo rõ là chủ đích. Rise Ads đưa cam kết lên slide đầu mỗi buổi review, tự đặt mình vào thế phải trả lời.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Phối hợp hai chiều: ai chịu trách nhiệm gì</h3></div>
+          <div class="c-body">
+            <div class="grid-3">
+              <div><b>Rise Ads chịu</b><p class="mt-s">Vận hành Ads: campaign, ROAS Target, bid, tiến độ ngân sách. Chẩn đoán và theo dõi 24/7. Bản đồ keyword, phân tầng, khuyến nghị listing và creative. Báo cáo và review tháng.</p></div>
+              <div><b>Brand chịu</b><p class="mt-s">Creative theo khung Rise Ads đề xuất. Tồn kho và giá mùa sale: hàng cho SKU chủ lực từ 9.9 đến 12.12, voucher, giá ngày campaign.</p></div>
+              <div><b>Cùng làm</b><p class="mt-s">Cấu trúc listing, ví dụ mở phân loại combo để nâng giá trị đơn: Rise Ads đề xuất và đo, brand triển khai.</p></div>
+            </div>
+            <p class="mt-s panel">Kịch bản đứt gãy phổ biến nhất không nằm ở Ads, mà ở hết hàng SKU chủ lực giữa mùa sale. Khung phối hợp này tồn tại để điều đó không xảy ra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hướng 2026 -->
+    <section id="huong-2026" aria-labelledby="h-26">
+      <h2 id="h-26" class="reveal">Shopee đã đổi cách phân phối</h2>
+      <p class="lead reveal">Đa số seller đang tối ưu cho một nền tảng không còn tồn tại. Shopee chuyển từ bid tay sang phân phối bằng thuật toán; seller điều khiển qua 3 tín hiệu; mỗi kênh một nhiệm vụ.</p>
+      <div class="readfast mt reveal"><b>Đọc nhanh</b>Shopee chuyển từ bid tay sang phân phối bằng thuật toán. Seller điều khiển qua 3 tín hiệu. Mỗi kênh một nhiệm vụ, tăng trưởng đến từ hiệu suất.</div>
+      <div class="stack">
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Cuộc dịch chuyển lớn</h3></div>
+          <div class="c-body grid-2">
+            <div><b>Kỷ nguyên cũ</b><p class="mt-s">CPC thủ công. Tự chọn keyword và bid. Lợi thế cho ai chăm hơn.</p></div>
+            <div><b>Kỷ nguyên mới</b><p class="mt-s">Phân phối bằng thuật toán (GMV Max, oCPM). Thuật toán phân phối theo dự đoán chuyển đổi. Seller điều khiển qua tín hiệu: ROAS Target, cấu trúc SKU, chất lượng listing. Lợi thế cho ai hiểu cơ chế hơn.</p></div>
+            <p class="c-full" style="grid-column:1/-1">Lộ trình này đã diễn ra ở Trung Quốc trước (Zhitongche sang oCPM). R&amp;D của Rise Ads bóc tách để biết trước bước kế tiếp.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>GMV Max: 3 cần điều khiển</h3></div>
+          <div class="c-body">
+            <ol class="tl tl--3">
+              <li><span class="tl-k">ROAS Target</span><p>Là ngưỡng lọc tệp: nới để lấy lại đà, siết khi tối ưu.</p></li>
+              <li><span class="tl-k">Cấu trúc SKU</span><p>Quyết định thuật toán học trên dữ liệu nào. Sai cấu trúc là học sai, đốt sai tệp.</p></li>
+              <li><span class="tl-k">Chất lượng listing</span><p>Tín hiệu CVR. Listing yếu khiến hiển thị đắt lên. Tối ưu listing là cần điều khiển phân phối, không phải dịch vụ phụ.</p></li>
+            </ol>
+            <p class="mt-s panel">Bằng chứng ẩn danh: shop chuyển GMV Max đúng cơ chế thì hiển thị tăng nhiều lần trong khi CPC và CPM giảm mạnh, CTR giữ hoặc tăng. Khoảng một nửa hiển thị đến từ vùng Gợi ý.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Bản đồ kênh 2026: mỗi kênh một nhiệm vụ</h3></div>
+          <div class="c-body">
+            <table class="tbl tbl-stack"><thead><tr><th>Kênh</th><th>Vai trò</th><th>Nhiệm vụ</th></tr></thead><tbody>
+              <tr><td class="k" data-l="Kênh">Product GMV Max</td><td data-l="Vai trò">Cỗ máy doanh thu chính</td><td data-l="Nhiệm vụ">Theo tầng Key Hero, Potential, Long-tail: quản ROAS Target theo giai đoạn, tối ưu ROAS, scale GMV</td></tr>
+              <tr><td class="k" data-l="Kênh">Shop Ads (Shop+)</td><td data-l="Vai trò">Phòng thủ</td><td data-l="Nhiệm vụ">Chiếm hiển thị toàn shop, giữ top keyword thương hiệu: kiểm soát CPC, bảo vệ traffic brand. Không lấy số đẹp ở quy mô nhỏ làm chuẩn.</td></tr>
+              <tr><td class="k" data-l="Kênh">Livestream Ads</td><td data-l="Vai trò">Chuyển đổi</td><td data-l="Nhiệm vụ">Chuyển đổi cao cho ngành cần tư vấn và độ tin (tệp nữ, mẹ bỉm): tối ưu CVR, đẩy giá trị đơn bằng combo và quà</td></tr>
+              <tr><td class="k" data-l="Kênh">Search thủ công (chọn lọc)</td><td data-l="Vai trò">Kiểm soát</td><td data-l="Nhiệm vụ">Giữ cụm keyword chiến lược mà thuật toán chưa ưu tiên đúng: chiếm SoV, thử tệp mới trước khi đưa vào GMV Max</td></tr>
+            </tbody></table>
+            <p class="mt-s">Tỷ trọng ngân sách giữa các kênh không cố định. Đề xuất sau audit tuần 1, tái phân bổ có chủ đích hằng tháng.</p>
+          </div>
+        </div>
+        <div class="grid reveal">
+          <div class="c-lead"><h3>Lộ trình tăng trưởng: 3 bước giành thị phần</h3></div>
+          <div class="c-body">
+            <ol class="tl tl--3">
+              <li><span class="tl-k">Khai thác trọn</span><p>Chiếm lĩnh tìm kiếm thương hiệu, top 1–2, đặt nền ROAS và CVR.</p></li>
+              <li><span class="tl-k">Mở rộng thị phần</span><p>Mở danh mục ý định trung lên top 2–4, tối ưu CPC và CVR song song.</p></li>
+              <li><span class="tl-k">Cạnh tranh và scale</span><p>Bid keyword chung và brand đối thủ, chen top. Ngân sách giữ nguyên, tăng trưởng đến từ hiệu suất.</p></li>
+            </ol>
+            <p class="mt-s">Tốc độ do dữ liệu quyết định, không do lịch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kết quả -->
+    <section id="ket-qua" aria-labelledby="h-kq">
+      <h2 id="h-kq" class="reveal">Ba giai đoạn, số hướng đến</h2>
+      <div class="numbers reveal">
+        <div><span class="num">+15–30%</span><p>GMV so với nền · giai đoạn 1 ổn định</p></div>
+        <div><span class="num">+30–40%</span><p>GMV theo tháng · giai đoạn 2 scale</p></div>
+        <div><span class="num">Đúng vùng</span><p>ROAS Target trong vùng của ngành bạn: Mẹ &amp; Bé 9–12×, Thời trang 10–14×, Nội thất 25–40×. Tránh cả hai đầu: bị siết và lãng phí.</p></div>
+        <div><span class="num">−30–40%</span><p>Ngân sách lãng phí · cắt keyword sai tệp</p></div>
+      </div>
+      <div class="panel mt reveal">
+        <p><b>Case thực tế:</b> Smart Kids Q4/2025 +814% GMV, ROAS đỉnh 42,3× · Cavaillès Q3/2025 +86,3% GMV, ROAS 7× lên 13× · Dincox Q3/2025 +26,5% GMV, ROAS đỉnh 22×. <a href="clients.html#case">Xem bảng hành động theo tuần</a>.</p>
+        <p class="small mt-s">Mỗi shop có điểm xuất phát khác nhau. Đây là case thực tế, không phải cam kết cho mọi shop.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="field-navy cta-band" aria-labelledby="h-cta">
+  <div class="wrap">
+    <div class="cta-text reveal">
+      <h2 id="h-cta">Bắt đầu tối ưu Shopee Ads của bạn?</h2>
+      <p class="lead mt-s">Audit toàn diện trước khi đề xuất bất cứ giải pháp nào.</p>
+    </div>
+    <div class="actions cta-act"><button class="btn" type="button" data-modal="tu-van">Liên hệ tư vấn</button><a class="link" href="https://zalo.me/0364191445">Zalo 036 419 1445</a></div>
+  </div>
+</section>
+
+<footer class="field-navy foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="mark" href="index.html">Rise<b>Ads</b></a>
+        <p class="mt-s">Agency chuyên Shopee Ads. Tăng trưởng GMV có hệ thống bằng 43 nhánh chẩn đoán và dữ liệu 560+ gian hàng.</p>
+        <p class="foot-legal">Wavelink Compass Co., Ltd.<br>280B1 Lương Định Của, P. An Khánh, TP. Hồ Chí Minh<br>036 419 1445</p>
+      </div>
+      <nav class="foot-col" aria-label="Dịch vụ">
+        <h4>Dịch vụ</h4>
+        <a href="shopee-ads.html">Shopee Ads Management</a>
+        <a href="services.html#h-audit">Audit Shopee Ads một lần</a>
+        <a href="workshop.html">Workshop GMV Max</a>
+        <a href="services.html#sap-ra-mat">Dịch vụ sắp ra mắt</a>
+      </nav>
+      <nav class="foot-col" aria-label="Công ty">
+        <h4>Công ty</h4>
+        <a href="company.html">Về chúng tôi</a>
+        <a href="shopee-ads.html#quy-trinh">Phương pháp</a>
+        <a href="blog.html">Blog</a>
+        <a href="clients.html">Đối tác</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="contact.html#bao-mat">Chính sách bảo mật</a>
+      </nav>
+      <div class="foot-col">
+        <h4>Liên hệ</h4>
+        <a href="https://zalo.me/0364191445">Zalo: 036 419 1445</a>
+        <p>280B1 Lương Định Của<br>P. An Khánh, TP. Hồ Chí Minh</p>
+        <p>Thứ 2 – Thứ 6 · 8:30 – 18:00</p>
+      </div>
+    </div>
+    <div class="foot-end">
+      <span>© 2026 Rise Ads Agency · Wavelink Compass</span>
+      <span>risecom.vn · Performance Ads Agency</span>
+    </div>
+  </div>
+</footer>
+<div id="sheet" class="sheet" hidden tabindex="-1">
+  <div class="sheet-top"><a class="mark" href="index.html">Rise<b>Ads</b></a><button class="link sheet-close" type="button">Đóng</button></div>
+  <nav aria-label="Menu điện thoại"><a href="services.html">Dịch vụ</a><a href="shopee-ads.html">Shopee Ads</a><a href="workshop.html">Workshop</a><a href="blog.html">Blog</a><a href="company.html">Công ty</a><a href="clients.html">Đối tác</a><a href="contact.html">Liên hệ</a></nav>
+  <p class="sheet-foot"><a href="https://zalo.me/0364191445">Zalo 036 419 1445</a></p>
+</div>
+
+<dialog id="contact-modal" class="modal" aria-labelledby="m-title">
+  <div class="m-in">
+    <div class="m-top"><div><h2 id="m-title">Tư vấn miễn phí 30 phút</h2><p class="small mt-s">Chúng tôi chẩn đoán shop trước khi đề xuất. Phản hồi trong 24 giờ làm việc.</p></div><button class="link" type="button" data-modal-close>Đóng</button></div>
+    <form class="form" data-form novalidate>
+      <div><label for="m-name">Tên / Công ty</label><input id="m-name" name="name" required autocomplete="name"></div>
+      <div><label for="m-phone">Số Zalo</label><input id="m-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" aria-describedby="m-phone-h"><p id="m-phone-h" class="hint small">Zalo là kênh ưu tiên, phản hồi nhanh nhất.</p></div>
+      <div><label for="m-service">Dịch vụ quan tâm</label><select id="m-service" name="service"><option value="tu-van">Shopee Ads Management</option><option value="bao-gia">Báo giá Shopee Ads Management</option><option value="audit">Audit Shopee Ads (1 lần)</option><option value="khac">Khác</option></select></div>
+      <div><label for="m-ind">Ngành hàng</label><select id="m-ind" name="industry"><option value="">Chọn ngành</option></select></div>
+      <div><label for="m-spend">Chi phí Ads / tháng</label><input id="m-spend" name="ads_spend" inputmode="decimal" placeholder="VD: 60 triệu"></div>
+      <div><label for="m-rev">Doanh thu từ Ads / tháng</label><input id="m-rev" name="ads_revenue" inputmode="decimal" placeholder="VD: 400 triệu"><p class="roas-out small" aria-live="polite"></p></div>
+      <div class="f-full"><label for="m-issue">Vấn đề đang gặp</label><textarea id="m-issue" name="issue" placeholder="ROAS không ổn định, keyword sai tệp, muốn scale nhưng không biết bắt đầu từ đâu..."></textarea></div>
+      <div class="hp" aria-hidden="true"><label>Website<input name="website_url" tabindex="-1" autocomplete="off"></label></div>
+      <p class="err f-full" aria-live="polite"></p>
+      <div class="f-act actions"><button class="btn" type="submit">Gửi yêu cầu tư vấn</button><span class="small">Phản hồi trong 24 giờ làm việc</span></div>
+      <p class="f-done" hidden></p>
+    </form>
+  </div>
+</dialog>
+
+<a class="zalo-fab" href="https://zalo.me/0364191445">Zalo</a>
+<script src="app.js?v=20261104j" defer></script>
+</body>
+</html>
